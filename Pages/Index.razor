@@ -5,20 +5,20 @@
 
 <SfTab @ref="Tab">
     <TabItems>
-       <TabItem>
-         <ChildContent>
-             <TabHeader Text="Project Time"></TabHeader>
-         </ChildContent>
+        <TabItem>
+            <ChildContent>
+                <TabHeader Text="Project Time"></TabHeader>
+            </ChildContent>
             <ContentTemplate>
                 <ul>
                     <li>Click on the "+" header to add dynamic tab items. </li>
                 </ul>
-           </ContentTemplate>
-     </TabItem>
-         <TabItem>
-             <HeaderTemplate>
-                  <SfButton  Content="+"  @onclick="onClick"></SfButton>
-             </HeaderTemplate>
+            </ContentTemplate>
+        </TabItem>
+        <TabItem>
+            <HeaderTemplate>
+                <SfButton Content="+" @onclick="onClick"></SfButton>
+            </HeaderTemplate>
         </TabItem>
     </TabItems>
 </SfTab>
