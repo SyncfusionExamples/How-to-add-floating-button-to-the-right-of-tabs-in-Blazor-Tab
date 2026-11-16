@@ -1,0 +1,43 @@
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.app {
+    background-color: #fff;
+}
+
+@media (min-width: 641px) {
+    .app {
+        flex-direction: row;
+    }
+}
+
+.nav-scrollable {
+    background: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    height: 100vh;
+}
+
+.nav-item {
+    margin: 3px 0;
+    font-variant: small-caps;
+}
+
+    .nav-item ::deep a {
+        color: #d7d2df;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        padding-left: 1rem;
+    }
+
+        .nav-item ::deep a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        .nav-item ::deep a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
